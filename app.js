@@ -4,7 +4,7 @@ var ObjectId = require('mongodb').ObjectID;
 var express = require('express');
 var path = require('path');
 var validator = require('validator');
-var url = 'mongodb://test:test1@ds017185.mlab.com:17185/api';
+var url = 'mongodb://test:test1@ds017185.mlab.com:17185/api'; //nothing else in here, don't bother :P
 
 
 var app = express();
