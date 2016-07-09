@@ -1,0 +1,26 @@
+body {
+    font-family: Titillium Web;
+}
+
+.display-4 {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+hr {
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.btn {
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+dl {
+    margin-bottom: 5rem;
+}
+
+.col-sm-2 {
+    padding: 0;
+}
