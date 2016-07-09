@@ -53,7 +53,7 @@ app.get('/new/*', function(req, res) {
             }
         });
     } else {
-        res.end("Invalid or malformed URL. Please make sure you're including the protocol (e.g. http://).");
+        res.end(JSON.stringify({"error":"invalid url"}));
     }
 });
 
