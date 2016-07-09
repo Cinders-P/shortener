@@ -13,6 +13,8 @@ app.listen(process.env.PORT || 3000, function() { //need to adapt port to work c
     console.log("URL shortener listening on port 3000.");
 });
 
+app.use(express.static('public'));
+
 app.get('/new/*', function(req, res) {
     var doc = {};
     var suspect = req.originalUrl.slice(5);
@@ -76,8 +78,6 @@ app.use('/:shortForm', function(req, res) {
 });
 
 
-
-app.use(express.static(__dirname + '/public'));
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/index.html'));
 });
